@@ -130,8 +130,6 @@ if option == 2:
     best_sum = 0
     binaryList = firstSolution(num_vector)
     takenList = convertToTaken(binaryList)
-    print("First score: " + str(getScore(takenList)))
-    print("First solution: " + str(takenList))
     bestScore = calcBestScore(binaryList, num_vectorStatic.copy(), getScore(takenList))
     takenList = convertToTaken(bestScore)
     print("Last solution: " + str(takenList))
